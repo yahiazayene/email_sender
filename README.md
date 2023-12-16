@@ -6,6 +6,8 @@ multiple times and even enables you to upload files directly into the email body
 This app leverages Eel to seamlessly integrate HTML, JavaScript, and Python
 ensuring a smooth and responsive user experience. 
 
+to open it just double click on app.py 
+
 1-App Password Setup:
 
 -For enhanced security, use an App Password instead of your actual email password.
