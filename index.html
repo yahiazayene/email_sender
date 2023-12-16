@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Email Sender App</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Email Sender App</h1>
+        <div class="form">
+            <label for="to-email">To Email:</label>
+            <input type="text" id="to-email" v-model="toEmail">
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" v-model="subject">
+
+            <label for="body">Body:</label>
+            <textarea id="body" v-model="body"></textarea>
+
+            <label for="sender-email">Sender Email:</label>
+            <input type="text" id="sender-email" v-model="senderEmail">
+
+            <label for="sender-password">Sender Password:</label>
+            <input type="password" id="sender-password" v-model="senderPassword">
+
+            <!-- File input for selecting a file -->
+            <label for="file">Select File:</label>
+            <input type="file" id="file" ref="fileInput" @change="handleFileChange">
+
+            <!-- Display the selected file path -->
+            <label for="file-path">File Path:</label>
+            <input type="text" id="file-path" v-model="filePath">
+
+            <label for="num-emails">Number of Emails:</label>
+            <input type="number" id="num-emails" v-model="numEmails" min="1">
+
+            <button @click="sendEmail">Send Email</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="eel.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
